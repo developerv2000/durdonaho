@@ -1,0 +1,82 @@
+/* ------------ Aside categories ------------ */
+.aside-categories__list {
+    padding: 0 0 0 24px;
+    list-style: none;
+    margin: 20px 0 0;
+    direction: rtl;
+    overflow-y: auto;
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+}
+.aside-categories__item {
+    text-align: left;
+    line-height: 1.6;
+}
+.aside-categories__list::-webkit-scrollbar {
+    width: 1px;
+}
+.aside-categories__list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+.aside-categories__list::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    outline: 1px solid var(--secondary-color);
+}
+/* ------------ /end Aside categories ------------ */
+
+
+/* ------------ Categories card List ------------ */
+.categories-card-list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/* ------------ /end Categories card List ------------ */
+
+
+/* ------------ Quotes List ------------ */
+.quotes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/* ------------ /end Quotes List ------------ */
+
+
+/* ------------ Authors List ------------ */
+.authors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.authors-show-main-card {
+    margin-bottom: 32px;
+}
+/* ------------ /end Authors List ------------ */
+
+
+/* ------------ Empty query Warning ------------ */
+.empty-query-warning {
+    padding: 32px;
+}
+.empty-query-warning__inner {
+    margin: auto;
+}
+.favorite-authors-page-content .empty-query-warning__inner {
+    max-width: 520px;
+}
+.favorite-quotes-page-content .empty-query-warning__inner {
+    max-width: 520px;
+}
+.users-quotes-page-content .empty-query-warning__inner {
+    max-width: 520px;
+}
+.unverified-quotes-page-content .empty-query-warning__inner {
+    max-width: 520px;
+}
+/* ------------ /end Empty Query Warning ------------ */

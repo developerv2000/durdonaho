@@ -1,0 +1,188 @@
+/* ------------ Home Page ------------ */
+.home-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Latest quotse */
+.latest-quotes__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.latest-quotes__item {
+    padding-top: 40px
+}
+.latest-quotes__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-bottom: -20px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Home Carousel */
+.carousel-section {
+    overflow: hidden;
+    padding-top: 32px;
+}
+.carousel-section__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-bottom: -20px;
+    z-index: 2;
+    position: relative;
+}
+.owl-carousel-container {
+    position: relative;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    font-size: 14px;
+    box-shadow: var(--theme-box-shadow);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    z-index: 2;
+    background: #EBF3F0;;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.owl-carousel .owl-nav button.owl-next {
+    right: 28px;
+    left: auto;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    left: 28px;
+    right: auto;
+}
+.owl-nav button span {
+    font-size: 16px;
+}
+.owl-carousel .card__categories-item {
+    display: none;
+}
+.owl-carousel .card__categories-item:first-child, .owl-carousel .card__categories-item:nth-child(2), .owl-carousel .card__categories-item:nth-child(3) {
+    display: block;
+}
+.owl-carousel .ya-share2__popup {
+    top: auto !important;
+    bottom: -50px;
+}
+.owl-carousel .ya-share2__container_size_m .ya-share2__badge .ya-share2__icon {
+    height: 18px !important;
+    width: 18px !important;
+}
+.owl-carousel .ya-share2__container_size_m .ya-share2__title {
+    line-height: 20px !important;
+}
+/* ------------ /end Home Page ------------ */
+
+
+/* ------------ Terms Page ------------ */
+.terms-section__inner {
+    font-size: 14px;
+    padding: 30px 50px 40px;
+}
+.terms-section__title {
+    margin-bottom: 18px;
+}
+/* ------------ /end Terms Page ------------ */
+
+
+/* ------------ Users show page ------------ */
+.users-card-section__inner {
+    padding: 40px 200px;
+}
+.users-card-section__title {
+    margin-bottom: 40px;
+}
+/* ------------ /end Users show page ------------ */
+
+
+/* ------------ Search page ------------ */
+.search-page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.highlighted {
+    background-color: var(--main-color);
+    color: white;
+}
+.search-page-content .card__title {
+    text-transform: capitalize;
+}
+/* ------------ /end Search page ------------ */
+
+
+/* ------------ Email Verification ------------ */
+.email-verification-block {
+    padding: 32px;
+}
+.email-verification-text {
+    margin-bottom: 0;
+}
+.email-verification-text a {
+    color: var(--main-color);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.email-verification-actions {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.email-verification-resend {
+    padding: 14px 24px;
+}
+.email-verification-logout {
+    padding: 14px 24px;
+    background: var(--main-color);
+    color: white;
+    border: none;
+}
+/* ------------ /end Email Verification ------------ */
+
+
+/* ------------ Unverified quotes ------------ */
+.unverified-quotes-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.unverified-quotes-about__inner {
+    max-width: 520px;
+    margin: auto;
+    padding: 32px 0;
+}
+.unverified-quotes-about__title {
+    margin-bottom: 12px;
+}
+.unverified-quotes-about__text {
+    margin: 0;
+}
+.unverified-quotes-section .card__actions {
+    display: none;
+}
+.unverified-quotes-section .card__categories-link {
+    pointer-events: none;
+}
+/* ------------ /end Unverified quotes ------------ */
+
+
+/* ------------ Password reset page ------------ */
+.password-reset__error-text {
+    display: flex;
+    padding: 32px;
+}
+/* ------------ /end Password reset page ------------ */

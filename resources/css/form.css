@@ -1,0 +1,341 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form-group--hidden {
+    display: none;
+}
+.form-error-message {
+    color: red;
+    font-size: 14px;
+}
+
+
+/* Label */
+.label {
+    font-size: 16px;
+}
+
+
+/* Input */
+input {
+    font-family: 'Raleway', sans-serif;
+}
+.input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #c9c9c9;
+    color: var(--text-color);
+}
+.input::placeholder {
+    color: var(--text-color);
+}
+.input--light {
+    border-color: white;
+    color: white;
+}
+.input--light::placeholder {
+    color: white;
+}
+.input--error {
+    border-color: red;
+}
+
+
+/* Textarea */
+.textarea {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid #c9c9c9;
+    border-radius: 8px;
+    padding: 12px;
+    line-height: 1.5;
+    outline: none;
+}
+.textarea--light {
+    border-color: white;
+    color: white;
+}
+
+
+/* Radio */
+.radio-container {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.radio {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+.radio-replacer {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+}
+.radio-replacer::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: black;
+    display: none;
+}
+.radio:checked + .radio-replacer::after {
+    display: block;
+}
+.radio-label {
+    cursor: pointer;
+}
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Checkbox */
+.checkbox-container {
+    position: relative;
+}
+.checkbox {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+.checkbox-replacer {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+    top: 0;
+    left: 0px;
+}
+.checkbox-replacer::after {
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 1em;
+    border-style: solid;
+    border-width: 0 0.2em 0.2em 0;
+    border-color: black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+    display: none;
+}
+.checkbox:checked + .checkbox-replacer::after {
+    display: block;
+}
+
+
+/* Selectize */
+.selectize-singular, .selectize-singular-taggable, .selectize-multiple , .selectize-multiple-taggable {
+    width: 100%;
+    display: flex;
+}
+.selectize-input {
+    background-color: #EBF3F0 !important;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+}
+.selectize-input.focus {
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 10%);
+}
+.selectize-input.input-active {
+    background-color: #EBF3F0 !important;
+}
+.selectize-dropdown .option {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+.selectize-dropdown .create {
+    padding: 10px 14px;
+    font-size: 14px;
+}
+.selectize-control.multi .selectize-input>div {
+    margin: 0 4px 4px 0;
+    padding: 4px 8px;
+    background: #fff4c6;
+    color: var(--text-color);
+    border-radius: 8px;
+}
+
+
+/* ------------ Modal Form ------------ */
+.modal-form {
+    gap: 20px;
+    color: white;
+}
+.modal-form input {
+    padding: 10px 0;
+}
+.modal-radio-group {
+    color: white;
+    gap: 32px;
+}
+.modal-submit {
+    margin-top: 20px;
+}
+.modal-form__errors {
+    margin: 20px 0 -12px;
+    padding: 0;
+    font-size: 15px;
+}
+.modal-form__errors:empty {
+    display: none;
+}
+/* ------------ /end Modal Form ------------ */
+
+
+/* ------------ Main Form ------------ */
+.main-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px 32px;
+    gap: 40px;
+}
+.main-form .main-title {
+    margin-bottom: -4px;
+}
+.main-form .main-title--indented {
+    margin-bottom: 12px;
+}
+.main-form__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.main-form .input {
+    flex-grow: 1;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 0;
+}
+.main-form .input::placeholder {
+    color: #A6A6A6;
+}
+.main-form__submit {
+    padding: 14px 100px;
+    width: max-content;
+    margin-top: 8px;
+}
+.main-form .selectize-container {
+    margin-top: 6px;
+}
+/* ------------ /end Main Form ------------ */
+
+
+/* ------------ Block with Edit Button ------------ */
+.block_with_edit_button {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    padding: 6px 0;
+    align-items: center;
+}
+.block_with_edit_button--error {
+    border-bottom: 1px solid red;
+}
+.block_with_edit_button--columned {
+    flex-direction: column;
+    border: none;
+}
+.block_with_edit_button .input {
+    border: none;
+    padding: 4px 0;
+    flex-grow: 1;
+    outline: none;
+    font-size: 16px;
+}
+.block_with_edit_button .textarea {
+    width: 100%;
+}
+.block_with_edit_button .button {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    padding: 0;
+}
+.block_with_edit_button .button span {
+    font-size: 20px;
+}
+.block_with_edit_button--columned .button {
+    margin: 20px 0 0 auto;
+}
+/* ------------ /end Block with Edit Button ------------ */
+
+
+/* ------------ Profile update Form ------------ */
+.profile-form__image-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.profile-form__image-group-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.profile-form__image-group-input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.profile-form__image-group-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+}
+.profile-form__image-group-label {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+.profile-form__image-group-label span {
+    font-size: 20px;
+}
+.profile-form__image-group-remove-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    padding: 0;
+    font-size: 16px;
+}
+/* ------------ /end Profile update Form ------------ */
