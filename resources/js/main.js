@@ -412,14 +412,6 @@ document.querySelectorAll('.categories-filter__checkbox').forEach(item => {
 
         // update list
         ajaxUpdateList();
-
-        // refresh show modal buttons
-        document.querySelectorAll('#main-list button[data-action="show-modal"]').forEach(item => {
-            item.addEventListener('click', (evt) => {
-                document.getElementById(item.dataset.targetId).classList.add('modal--visible');
-                document.body.style.overflowY = "hidden";
-            });
-        });
     });
 });
 
@@ -458,6 +450,14 @@ function ajaxUpdateList() {
 
             // reinitialize report modals
             initializeReportModals();
+
+            // refresh show modal buttons
+            document.querySelectorAll('#main-list button[data-action="show-modal"]').forEach(item => {
+                item.addEventListener('click', (evt) => {
+                    document.getElementById(item.dataset.targetId).classList.add('modal--visible');
+                    document.body.style.overflowY = "hidden";
+                });
+            });
         },
 
         error: function () {
